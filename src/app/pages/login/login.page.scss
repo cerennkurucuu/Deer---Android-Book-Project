@@ -1,0 +1,38 @@
+ion-content {
+    display: flex;
+    justify-content: center;
+    --background: url('src/assets/background.png') ;
+    background:url('src/assets/background.png') ;
+
+    .imgbox {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+
+
+        img {
+            height: 100px;
+            width: 50%;
+            margin-top: 40px;
+
+
+        }
+    }
+
+    .buttonbox {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+
+        .buttonitem {
+            display: flex;
+            width: 47%;
+
+
+
+        }
+    }
+
+
+}

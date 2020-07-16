@@ -1,0 +1,28 @@
+ion-header {
+    --background: #d92b11 !important;
+    background: #d92b11 !important;
+
+    ion-toolbar {
+        --background: #d92b11 !important;
+        background: #d92b11 !important;
+
+    }
+}
+
+ion-content {
+    display: flex;
+    justify-content: center;
+    --background: url('src/assets/background.png') no-repeat 100% 100%;
+    background:url('src/assets/background.png') no-repeat 100% 100%;
+    .buttonBox {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+
+
+    }
+
+
+
+}

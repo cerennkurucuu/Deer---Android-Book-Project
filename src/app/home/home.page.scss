@@ -1,0 +1,27 @@
+ion-header {
+  --background: #ffffff !important;
+  background: #ffffff !important;
+
+  ion-toolbar {
+    --background: url('src/assets/background.png') no-repeat 100% 100%;
+background:url('src/assets/background.png') no-repeat 100% 100%;
+;
+.logo{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    ion-title{
+      font-size: 10px;
+      color: white;
+    }
+  }
+  ion-button {
+    font-size: 20px;
+  }
+}
+ion-buttons {
+  color: #ffffff !important;
+}
+
+

@@ -1,0 +1,59 @@
+<form [formGroup]="authForm">
+  <ion-item>
+    <ion-label position="floating"
+      ><ion-icon name="mail-outline"></ion-icon
+    ></ion-label>
+    <ion-input
+      fill="clear"
+      formControlName="email"
+      type="email"
+      [class.invalid]="
+        !authForm.controls['email'].valid && authForm.controls['email'].touched
+      "
+    >
+    </ion-input>
+  </ion-item>
+  <ion-item
+    class="error-message"
+    *ngIf="
+      !authForm.controls['email'].valid && authForm.controls['email'].touched
+    "
+  >
+    <ion-label>Lütfen geçerli bir e-posta adresi girin</ion-label>
+  </ion-item>
+
+  <ion-item *ngIf="!isPasswordResetPage">
+    <ion-label position="floating"
+      ><ion-icon name="key-outline"></ion-icon
+    ></ion-label>
+    <ion-input
+      fill="clear"
+      formControlName="password"
+      type="password"
+      [class.invalid]="
+        !authForm.controls['password'].valid &&
+        authForm.controls['password'].touched
+      "
+    >
+    </ion-input>
+  </ion-item>
+  <ion-item
+    class="error-message"
+    *ngIf="
+      !authForm.controls['password'].valid &&
+      authForm.controls['password'].touched &&
+      !isPasswordResetPage
+    "
+  >
+    <ion-label>Şifreniz en az 6 karakter olmalı</ion-label>
+  </ion-item>
+
+  <ion-button
+    (click)="submitCredentials(authForm)"
+    expand="block"
+    color="warning"
+    [disabled]="!authForm.valid"
+  >
+    {{ actionButtonText }}
+  </ion-button>
+</form>

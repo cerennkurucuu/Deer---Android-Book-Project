@@ -1,0 +1,76 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button
+        text=""
+        color="light"
+        defaultHref="/home"
+      ></ion-back-button>
+    </ion-buttons>
+    <ion-title>Profil</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="logOut()">
+        <ion-icon slot="icon-only" color="light" name="log-out"> </ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-item (click)="updateName()">
+      <ion-label>
+        <ion-row>
+          <ion-grid>
+            <ion-col class="text-left" size="5"> Kullanıcı Adı </ion-col>
+            <ion-col class="text-center" size="7" *ngIf="userProfile?.fullName">
+              {{userProfile?.fullName}}
+            </ion-col>
+            <ion-col
+              size="7"
+              class="placeholder-profile text-center"
+              *ngIf="!userProfile?.fullName"
+            >
+              <span> Düzenle </span>
+            </ion-col>
+          </ion-grid>
+        </ion-row>
+      </ion-label>
+    </ion-item>
+  </ion-card>
+  <ion-card>
+    <ion-item (click)="updateEmail()">
+      <ion-label>
+        <ion-grid>
+          <ion-row>
+            <ion-col class="text-left" size="5"> Email </ion-col>
+            <ion-col class="text-center" size="7" *ngIf="userProfile?.email">
+              {{userProfile?.email}}
+            </ion-col>
+            <ion-col
+              size="7"
+              class="placeholder-profile text-center"
+              *ngIf="!userProfile?.email"
+            >
+              <span> Düzenle </span>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-label>
+    </ion-item>
+  </ion-card>
+  <ion-card>
+    <ion-item (click)="updatePassword()">
+      <ion-label>
+        <ion-grid>
+          <ion-row>
+            <ion-col class="text-left" size="5"> Şifre Değiştir </ion-col>
+            <ion-col class="text-center" size="7" class="placeholder-profile">
+              <span> Düzenle </span>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-label>
+    </ion-item>
+  </ion-card>
+</ion-content>

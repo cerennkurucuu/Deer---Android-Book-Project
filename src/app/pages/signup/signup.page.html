@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button
+        color="dark"
+        text=""
+        defaultHref="/login"
+        expand="small"
+      ></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <app-auth-form
+    #signupForm
+    (formSubmitted)="signupUser($event)"
+    [actionButtonText]="'Üye Ol'"
+  ></app-auth-form>
+  <div class="buttonBox">
+    <ion-button expand="small" fill="clear" color="light" routerLink="/login">
+      Giriş yap
+    </ion-button>
+  </div>
+</ion-content>

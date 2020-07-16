@@ -1,6 +1,6 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/ionic3,cordova,apachecordova,angular,android,androidstudio
-# Edit at https://www.toptal.com/developers/gitignore?templates=ionic3,cordova,apachecordova,angular,android,androidstudio
+# Created by https://www.toptal.com/developers/gitignore/api/ionic3,android,androidstudio,cordova,apachecordova,images
+# Edit at https://www.toptal.com/developers/gitignore?templates=ionic3,android,androidstudio,cordova,apachecordova,images
 
 ### Android ###
 # Built application files
@@ -96,37 +96,6 @@ output.json
 # Replacement of .externalNativeBuild directories introduced
 # with Android Studio 3.5.
 
-### Angular ###
-## Angular ##
-# compiled output
-dist/
-tmp/
-app/**/*.js
-app/**/*.js.map
-
-# dependencies
-node_modules/
-bower_components/
-
-# IDEs and editors
-.idea/
-
-# misc
-.sass-cache/
-connect.lock/
-coverage/
-libpeerconnection.log/
-npm-debug.log
-testem.log
-typings/
-
-# e2e
-e2e/*.js
-e2e/*.map
-
-# System Files
-.DS_Store/
-
 ### ApacheCordova ###
 # Apache Cordova generated files and directories
 bin/*
@@ -148,6 +117,71 @@ platforms/*
 # Optional to ignore plugin Git clones
 #/plugins
 
+### Images ###
+# JPEG
+*.jpg
+*.jpeg
+*.jpe
+*.jif
+*.jfif
+*.jfi
+
+# JPEG 2000
+*.jp2
+*.j2k
+*.jpf
+*.jpx
+*.jpm
+*.mj2
+
+# JPEG XR
+*.jxr
+*.hdp
+*.wdp
+
+# Graphics Interchange Format
+*.gif
+
+# RAW
+*.raw
+
+# Web P
+*.webp
+
+# Portable Network Graphics
+*.png
+
+# Animated Portable Network Graphics
+*.apng
+
+# Multiple-image Network Graphics
+*.mng
+
+# Tagged Image File Format
+*.tiff
+*.tif
+
+# Scalable Vector Graphics
+*.svg
+*.svgz
+
+# Portable Document Format
+*.pdf
+
+# X BitMap
+*.xbm
+
+# BMP
+*.bmp
+*.dib
+
+# ICO
+*.ico
+
+# 3D Images
+*.3dm
+*.max
+
 ### Ionic3 ###
 # Log an tmp data
 *~
@@ -158,10 +192,13 @@ log.txt
 
 # NPM (Node Package Manager) files
 npm-debug.log*
+node_modules/
+tmp/
 temp/
 
 # Preprocessors cache files
 .sourcemaps/
+.sass-cache/
 .tmp/
 hooks/
 
@@ -283,4 +320,4 @@ fabric.properties
 
 !/gradle/wrapper/gradle-wrapper.jar
 
-# End of https://www.toptal.com/developers/gitignore/api/ionic3,cordova,apachecordova,angular,android,androidstudio
+# End of https://www.toptal.com/developers/gitignore/api/ionic3,android,androidstudio,cordova,apachecordova,images

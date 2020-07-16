@@ -1,0 +1,8 @@
+{
+  "name": "deer",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

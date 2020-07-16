@@ -1,0 +1,33 @@
+<ion-content class="login">
+  <div class="imgbox">
+    <img src="assets/reindeer-2690235.png" alt="deer logo" />
+  </div>
+  <app-auth-form
+    #loginForm
+    (formSubmitted)="loginUser($event)"
+    [actionButtonText]="'Giriş Yap'"
+  ></app-auth-form>
+
+  <div class="buttonbox">
+    <div class="buttonitem">
+      <ion-button
+        expand="small"
+        color="light"
+        fill="clear"
+        routerLink="/signup"
+      >
+        Üye Ol
+      </ion-button>
+    </div>
+    <div class="buttonitem">
+      <ion-button
+        expand="small"
+        color="light"
+        fill="clear"
+        routerLink="/reset-password"
+      >
+        Şifremi Unuttum
+      </ion-button>
+    </div>
+  </div>
+</ion-content>
